@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | TechNest India Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for Services page table */
+        .software-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .software-table th, .software-table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .software-table th {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="TechNest India Solutions Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="webdev.html">Website Development</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h1>Comprehensive IT & Hardware Services</h1>
+                    <p>We offer a diverse portfolio of services to ensure your business operations run smoothly and securely.</p>
+                </div>
+
+                <div class="grid-2 fade-in-up delay-1" style="margin-bottom: 4rem;">
+                    <div>
+                        <h2>💻 Laptop & Desktop Sales</h2>
+                        <p>We supply top-tier hardware tailored to your performance requirements and budget.</p>
+                        <ul style="list-style-position: inside; margin-top: 10px;">
+                            <li><strong>Business Laptops:</strong> Lightweight, secure, and powerful machines for professionals on the go.</li>
+                            <li><strong>Custom Desktops & Workstations:</strong> High-performance rigs optimized for designers, developers, and data processing.</li>
+                            <li><strong>Accessories & Peripherals:</strong> Monitors, keyboards, networking gear, and more.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/hardware.png" alt="Hardware Sales" style="border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div class="grid-2 fade-in-up delay-2" style="margin-bottom: 4rem;">
+                    <div>
+                        <img src="images/camera.png" alt="CCTV Services" style="border-radius: 8px;">
+                    </div>
+                    <div>
+                        <h2>📹 CCTV Installation & Security</h2>
+                        <p>Protect your physical assets with our advanced surveillance solutions.</p>
+                        <ul style="list-style-position: inside; margin-top: 10px;">
+                            <li>High-Definition IP and Analog Camera systems.</li>
+                            <li>Network Video Recorder (NVR) and DVR setups.</li>
+                            <li>Remote viewing configuration for your smartphone or tablet.</li>
+                            <li>Maintenance, troubleshooting, and storage upgrades.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fade-in-up delay-3">
+                    <h2>💿 Software Purchase & Installation</h2>
+                    <p>We provide genuine licensing, deployment, and troubleshooting for the world's most widely used software. We handle the complete installation process so you are ready to work immediately.</p>
+                    
+                    <div style="overflow-x:auto;">
+                        <table class="software-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Available Software (Latest Versions)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Operating Systems</strong></td>
+                                    <td>Windows 11 Pro, Windows 11 Enterprise, Windows Server 2025, Linux Distributions</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Productivity & Office</strong></td>
+                                    <td>Microsoft Office 365 (Business Basic/Standard/Premium), Office 2024 LTSC, Google Workspace</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Design & Drafting</strong></td>
+                                    <td>AutoCAD 2025, Revit, SketchUp, Adobe Creative Cloud (Photoshop, Illustrator, Premiere Pro), CorelDRAW</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Accounting & ERP</strong></td>
+                                    <td>Tally Prime, Tally on Cloud, Zoho Books</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Security & Antivirus</strong></td>
+                                    <td>Bitdefender GravityZone, Kaspersky Endpoint Security, Quick Heal, Fortinet Solutions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container grid-3">
+            <div class="footer-col">
+                <img src="images/logo.jpeg" alt="TechNest Logo" class="footer-logo">
+                <p>Bridging the gap between your business goals and the technology required to achieve them.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">IT Services</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><strong>Location:</strong> Indiranagar, Bangalore</p>
+                <p><strong>Phone:</strong> <a href="tel:8680859113">+91 8680859113</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sales@technestindia.in">sales@technestindia.in</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TechNest India Solutions. All rights reserved.</p>
+                <p class="dev-attr">Designed by <a href="#" class="dev-link">TechNestIndiaSolutions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

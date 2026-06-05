@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechNest India Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for the Contact Form */
+        .contact-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="TechNest India Solutions Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="webdev.html">Website Development</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h1>Get In Touch With Us</h1>
+                    <p>Ready to upgrade your IT infrastructure or build your website? Our team is ready to assist you.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="fade-in-up delay-1">
+                        <h2>Contact Information</h2>
+                        <p style="margin-bottom: 2rem;">Reach out to us directly or fill out the form, and our sales team will get back to you within 24 hours.</p>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">📍 Office Location</h3>
+                            <p>Indiranagar, Bangalore<br>Karnataka, India</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">📞 Phone Number</h3>
+                            <p><a href="tel:8680859113" style="font-weight: 600;">+91 8680859113</a></p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">✉️ Email Address</h3>
+                            <p><a href="mailto:sales@technestindia.in" style="font-weight: 600;">sales@technestindia.in</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form fade-in-up delay-2">
+                        <h2>Send Us a Message</h2>
+						<script>var submitted=false;</script>
+						<script>
+							// Check if the URL contains "?success=true"
+							if (window.location.search.includes('success=true')) {
+							alert("Thank you! Your message has been sent successfully. Our team will contact you shortly.");
+							// Clean up the URL so the popup doesn't keep showing if they refresh again
+							window.history.replaceState(null, null, window.location.pathname);
+							}
+						</script>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { window.location='contact.html?success=true'; }"></iframe>
+
+						<form action="https://docs.google.com/forms/d/e/1FAIpQLScSA94mAwM2Hd61Ra_2SMPb2EbvLQpd0LPr_hfVlB6-NzpXpA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+    
+							<div class="form-group">
+								<label for="name">Full Name</label>
+								<input type="text" name="entry.2005620554" id="name" class="form-control" placeholder="Your Name" required>
+							</div>
+    
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" name="entry.1045781291" id="email" class="form-control" placeholder="yourmail@company.com" required>
+							</div>
+    
+							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="tel" name="entry.1166974658" id="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+							</div>
+    
+							<div class="form-group">
+							<label for="message">Your Message</label>
+							<textarea name="entry.839337160" id="Requirements" class="form-control" placeholder="How can we help you today?" required></textarea>
+							</div>
+    
+							<button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container grid-3">
+            <div class="footer-col">
+                <img src="images/logo.jpeg" alt="TechNest Logo" class="footer-logo">
+                <p>Bridging the gap between your business goals and the technology required to achieve them.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">IT Services</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><strong>Location:</strong> Indiranagar, Bangalore</p>
+                <p><strong>Phone:</strong> <a href="tel:8680859113">+91 8680859113</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sales@technestindia.in">sales@technestindia.in</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TechNest India Solutions. All rights reserved.</p>
+                <p class="dev-attr">Designed by <a href="#" class="dev-link">TechNestIndiaSolutions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
